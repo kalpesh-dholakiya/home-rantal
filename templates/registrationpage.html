@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+</head>
+
+<body>
+<form action="" method="POST">
+{% csrf_token %} 
+<table>
+
+<tr>
+<td>Email Id : 
+        <input type="Email" name="txt_email" value=""/></td>
+</tr>
+<tr>
+<td>First Name :  
+        <input type="text" name="txt_fname" value=""/></td>
+</tr>
+<tr>
+<td>Last name : 
+        <input type="text" name="txt_lname" value=""/></td>
+</tr>
+<tr>
+<td>Gender : 
+        <input type="radio" name="re_ga" value="0">Male
+        <input type="radio" name="re_ga" value="1">Female</td>
+
+</tr>
+<tr>
+<td>Phone Number : 
+        <input type="text" name="txt_pnumber" value=""/></td>
+</tr>
+<tr>
+<td>Password :  
+        <input type="Password" name="txt_password" value=""/></td>
+</tr>
+<tr>
+<td>User Type :  
+        <select name="ddl">
+                            <option value="" selected disabled>Select User Type</option>
+                            <option value="0">0 Admin</option>
+                            <option value="1">1 User</option>
+                            <option value="2">2 PropertyDiler</option>
+         </select></td>
+</tr>
+<tr>
+        <td><input type="submit" name="btn_submit" value="Submit"></td>
+</tr>
+
+</table>
+<form>
+
+</body>
+
+</html>

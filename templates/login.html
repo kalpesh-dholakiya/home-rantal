@@ -1,0 +1,37 @@
+<html>
+<head>
+</head>
+<body>
+        {% if error %}
+        {{error}}
+        {% endif %}
+
+    <form action="" method="POST">
+    {% csrf_token %} 
+        <table>
+
+        <tr>
+        <td>Email Id : 
+                <input type="Email" name="txt_email" value=""/></td>
+        </tr>
+        <tr>
+        <td>Password :  
+                <input type="Password" name="txt_password" value=""/></td>
+        </tr>
+        <tr>
+        <td>User Type :  
+                <select name="ddl">
+                                    <option value="" selected disabled>Select User Type</option>
+                                    <option value="0">0 Admin</option>
+                                    <option value="1">1 User</option>
+                                    <option value="2">2 PropertyDeler</option>
+                </select></td>
+        </tr>
+        <tr>
+        <td><input type="submit" name="btn_submit" value="Login"></td>
+        </tr>
+
+        </table>
+    </form>    
+</body>
+</html>
